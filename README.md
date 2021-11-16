@@ -371,12 +371,11 @@ readOnlyColumn.setCellFactory(CheckBoxTableCell.forTableColumn(readOnlyColumn))
 
     Añade una propiedad nueva a la lista de propiedades del bean que estamos editando.
 
-    La propiedad tendrá inicialmente los siguientes valores:
+    La propiedad tendrá por defecto los siguientes valores:
 
-    -   *Nombre (name) = "nuevaPropiedad"*
-    -   *Tipo (type) = TypeString*
-
-    >    El resto de valores se dejan como están.
+    | name               | type          | readOnly | Generic |
+    | ------------------ | ------------- | -------- | ------- |
+    | `"nuevaPropiedad"` | `Type.String` | `false`  | `null`  |
 
     Una vez añadida la propiedad a la lista de propiedades del bean, se seleccionará
     automáticamente el bean en la tabla:
